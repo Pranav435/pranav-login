@@ -19,7 +19,7 @@ def index():
 		names.append(name)
 		emails.append(email)
 		passwords.append(password)
-		email(os.getenv("EMAIL"),os.getenv("PASSWORD"),email_id,"Success","Successfully stored your data")
+		#email(os.getenv("EMAIL"),os.getenv("PASSWORD"),email_id,"Success","Successfully stored your data")
 		return render_template("result.html",message="Successfully logged in")
 
 @app.route("/registrants")
