@@ -23,4 +23,4 @@ def index():
 
 @app.route("/registrants")
 def registrants():
-	return render_template("registrants.html",names=names)
+	return render_template("registrants.html",names=db.execute("select name from users").fetchall())
